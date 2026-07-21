@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SPC予約システム</title>
+<!-- ファビコンの設定 -->
+<link rel="icon" href="https://spc-jp.github.io/yoyaku-system/favicon.png" type="image/png">
 <style>
   /* 全体の基本スタイル */
   body { font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif; margin: 0; padding: 20px; background-color: #f4f7f6; color: #333; }
@@ -194,7 +196,7 @@
     .then(response => response.json())
     .then(data => {
       if(data.status === "success") {
-        alert('予約が完了しました！スプレッドシートを確認してみてください。');
+        alert('予約が完了しました！スプレッドシートとカレンダーを確認してみてください。');
         resetSelection();
         document.getElementById('name').value = '';
         document.getElementById('email').value = '';
